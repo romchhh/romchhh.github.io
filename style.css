@@ -7,29 +7,14 @@ body {
 }
 
 .container {
-    max-width: 1200px;
-    /* Фіксована максимальна ширина контейнера */
     margin: 0 auto;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     text-align: left;
-    width: 95%;
-    /* Зробіть контейнер шириною 95% від максимальної ширини */
-}
-
-
-/* Інші стилі залишаються без змін */
-
-
-/* Додайте медіазапит для респонсивності на менших екранах */
-
-@media (max-width: 768px) {
-    .container {
-        width: 100%;
-        /* На менших екранах розтягніть контейнер на всю ширину */
-    }
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 table {
@@ -46,6 +31,17 @@ footer {
     width: 100%;
     padding: 10px 0;
     text-align: center;
+}
+
+
+/* Add media queries for different screen sizes */
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 }
 
 .button-container {
