@@ -8,67 +8,26 @@ body {
 
 .container {
     margin: 0 auto;
-    padding: 5%;
+    padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     text-align: left;
+    margin-left: 2%;
+    margin-right: 2%;
     overflow: auto;
     max-width: 100%;
+    /* Allow the container to expand to its full content width */
     max-height: 70vh;
+    /* Adjust this value as needed to control the scrollbar height */
 }
 
 header {
     background-color: #333;
     color: #fff;
-    padding: 2%;
+    padding: 20px;
     display: flex;
     align-items: center;
-}
-
-
-/* Медіа-запит для малих пристроїв (мобільних) */
-
-@media screen and (max-width: 768px) {
-    .container {
-        padding: 10px;
-    }
-    header h1 {
-        font-size: 20px;
-    }
-    table {
-        font-size: 12px;
-    }
-}
-
-
-/* Медіа-запит для середніх пристроїв (планшетів) */
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-    .container {
-        padding: 10%;
-    }
-    header h1 {
-        font-size: 24px;
-    }
-    table {
-        font-size: 14px;
-    }
-}
-
-
-/* Медіа-запит для великих пристроїв (екранів) */
-
-@media screen and (min-width: 1025px) {
-    .container {
-        padding: 15%;
-    }
-    header h1 {
-        font-size: 28px;
-    }
-    table {
-        font-size: 16px;
-    }
 }
 
 .logo {
@@ -98,6 +57,14 @@ footer {
     width: 100%;
     padding: 10px 0;
     text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 }
 
 .button-container {
