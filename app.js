@@ -46,20 +46,33 @@ function displayApplications() {
         var actionsCell = row.insertCell();
         var confirmButton = document.createElement("button");
         confirmButton.textContent = "Підтвердити";
+        confirmButton.classList.add("confirm-button"); // Додали клас для стилю
         confirmButton.addEventListener("click", function() {
-            confirmAction("підтвердити", row, application);
+            if (!confirmButton.disabled) {
+                // Заблокувати кнопку після натискання
+                confirmButton.disabled = true;
+                rejectButton.disabled = true;
+                confirmAction("підтвердити", row, application);
+            }
         });
 
         var rejectButton = document.createElement("button");
         rejectButton.textContent = "Відхилити";
+        rejectButton.classList.add("reject-button"); // Додали клас для стилю
         rejectButton.addEventListener("click", function() {
-            confirmAction("відхилити", row, application);
+            if (!rejectButton.disabled) {
+                // Заблокувати кнопку після натискання
+                confirmButton.disabled = true;
+                rejectButton.disabled = true;
+                confirmAction("відхилити", row, application);
+            }
         });
 
         actionsCell.appendChild(confirmButton);
         actionsCell.appendChild(rejectButton);
     });
 }
+
 
 // Функція для відображення підтвердження перед відхиленням або підтвердженням
 function confirmAction(action, row, application) {
@@ -72,6 +85,7 @@ function confirmAction(action, row, application) {
         statusCell.textContent = application.status;
     }
 }
+
 
 // Викликати функцію для відображення заявок при завантаженні сторінки
 displayApplications();
