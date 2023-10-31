@@ -2,53 +2,39 @@
 <html>
 
 <head>
-    <title>Сайт з таблицею і кнопками</title>
+    <title>Управління переміщеннями жк "Софія Київський"</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
+    <header>
+        <img src="your-logo.png" alt="Житловий Комплекс 'Софія Київський'">
+    </header>
     <div class="container">
-        <div class="sidebar">
-            <h2>Умовні заявки</h2>
-            <ul>
-                <li><a href="#">Заявка 1</a></li>
-                <li><a href="#">Заявка 2</a></li>
-                <li><a href="#">Заявка 3</a></li>
-                <!-- Add more as needed -->
-            </ul>
-        </div>
-        <div class="content">
-            <h1>Таблиця з кнопками</h1>
-            <table id="data-table">
-                <thead>
-                    <tr>
-                        <th>Ім'я</th>
-                        <th>Прізвище</th>
-                        <th>Вік</th>
-                        <th>Дії</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Іван</td>
-                        <td>Петров</td>
-                        <td>25</td>
-                        <td><button class="edit-button">Редагувати</button> <button class="delete-button">Видалити</button></td>
-                    </tr>
-                    <tr>
-                        <td>Марія</td>
-                        <td>Іванова</td>
-                        <td>30</td>
-                        <td><button class="edit-button">Редагувати</button> <button class="delete-button">Видалити</button></td>
-                    </tr>
-                </tbody>
-            </table>
-            <button id="add-button">Додати</button>
-        </div>
+        <h1>Заявки</h1>
+        <table id="applicationTable">
+            <thead>
+                <tr>
+                    <th>№ Заявки</th>
+                    <th>Ім'я</th>
+                    <th>ID</th>
+                    <th>Юзернейм</th>
+                    <th>Адреса</th>
+                    <th>Авто</th>
+                    <th>К-сть гостей</th>
+                    <th>Час</th>
+                    <th>Статус</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Заявки додаються сюди через JavaScript -->
+            </tbody>
+        </table>
     </div>
-    <div class="footer">
-        <p>©Romanwrm.</p>
-    </div>
+    <footer>
+        <p>Софія Київський ЖК &copy; 2023. Додаткова інформація: адреса, телефон, email</p>
+    </footer>
     <script src="app.js"></script>
 </body>
 
