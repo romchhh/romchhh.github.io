@@ -30,6 +30,7 @@ footer {
     color: #fff;
     width: 100%;
     padding: 10px 0;
+    text-align: center;
 }
 
 .button-container {
@@ -109,24 +110,41 @@ td.button-cell button {
     border-radius: 5px;
 }
 
-button.confirmBtn {
-    background-color: #4CAF50;
-    /* Зелений колір для підтвердження */
+
+/* Стилі для кнопок "Підтвердити" та "Відхилити" */
+
+.confirm-button {
+    background-color: green;
     color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-button.confirmBtn:hover {
-    background-color: #45a049;
+.reject-button {
+    background-color: red;
     color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-button.rejectBtn {
-    background-color: #FF5733;
-    /* Червоний колір для відхилення */
-    color: white;
+
+/* Стилі для вимкнутих кнопок */
+
+.confirm-button:disabled,
+.reject-button:disabled {
+    background-color: lightgray;
+    /* Змініть колір на той, який вам подобається */
+    color: darkgray;
+    /* Змініть колір на той, який вам подобається */
+    cursor: not-allowed;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
-button.rejectBtn:hover {
-    background-color: #d9534f;
-    color: white;
-}
+
+/* Стиль для синього кружка */
