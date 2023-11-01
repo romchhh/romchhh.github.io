@@ -14,29 +14,33 @@
         <h1>Заявки для в'їзду в жк "Софія Київська"</h1>
     </header>
     <div class="container">
-        <h1>Заявки</h1>
-        <table id="applicationTable">
-            <thead>
-                <tr>
-                    <th>№ Заявки</th>
-                    <th>Ім'я</th>
-                    <th>ID</th>
-                    <th>Юзернейм</th>
-                    <th>Адреса</th>
-                    <th>Авто</th>
-                    <th>К-сть гостей</th>
-                    <th>Час</th>
-                    <th>Статус</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-
-
-
-                <!-- Заявки додаються сюди через JavaScript -->
-            </tbody>
-        </table>
+        <div class="table-container">
+            <h1>Заявки</h1>
+            <table class="custom-table" id="pendingApplicationsTable">
+                <thead>
+                    <tr>
+                        <th class="application-number">№ Заявки</th>
+                        <th>Ім'я</th>
+                        <th class="id">ID</th>
+                        <th>Юзернейм</th>
+                        <th>Адреса</th>
+                        <th>Авто</th>
+                        <th>К-сть гостей</th>
+                        <th>Час</th>
+                        <th>Статус</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Заявки, які очікують підтвердження, додаються сюди через JavaScript -->
+                </tbody>
+            </table>
+            <table class="custom-table" id="confirmedApplicationsTable">
+                <tbody>
+                    <!-- Заявки, підтверджені або відхилені, додаються сюди через JavaScript -->
+                </tbody>
+            </table>
+        </div>
     </div>
     <footer>
         <p>Софія Київський ЖК &copy; 2023. Додаткова інформація: адреса, телефон, email</p>
