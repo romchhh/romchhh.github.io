@@ -1,0 +1,152 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d6e7fa;
+    /* Задній колір */
+}
+
+
+/* Для екранів ширше 768px */
+
+@media only screen and (min-width: 768px) {
+    .photo-container {
+        justify-content: space-between;
+    }
+    .photo {
+        width: 30%;
+    }
+}
+
+
+/* Для екранів ширше 576px, але менше або дорівнює 768px */
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .photo-container {
+        justify-content: center;
+    }
+    .photo {
+        width: 45%;
+    }
+}
+
+
+/* Для екранів менше або дорівнює 576px */
+
+@media only screen and (max-width: 575px) {
+    .photo-container {
+        justify-content: center;
+    }
+    .photo {
+        width: 90%;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    /* Ширина скролбару */
+}
+
+::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    /* Колір треку скролбару */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #b8b2bf;
+    /* Колір скролбару */
+    border-radius: 10px;
+    border: 3px solid #f0f0f0;
+    /* Простір між скролбаром і треком */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #52555a;
+    /* Колір скролбару при наведенні */
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.background-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.header-content {
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    width: 100%;
+    font-size: 2em;
+}
+
+.main-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 60px;
+    border-radius: 10px;
+    font-size: 2em;
+}
+
+.footer-content {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    width: 100%;
+    font-size: 1.3em;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+p {
+    margin: 10px 0;
+}
+
+.icons {
+    margin: 20px 0;
+}
+
+.icons a {
+    color: white;
+    font-size: 2em;
+    margin: 0 10px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.icons a:hover {
+    color: #6a11cb;
+    transform: scale(1.2);
+}
+
+.author {
+    margin-top: 20px;
+    font-style: italic;
+}
