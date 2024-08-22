@@ -13,54 +13,56 @@
     <script>
         emailjs.init('LKXFC2hGVLQUFUeTs'); // Replace 'YOUR_USER_ID' with your actual EmailJS user ID
     </script>
-
 </head>
 
 <body oncontextmenu="return false">
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="#" class="nav__logo">TeleBotsRoman</a>
+            <a href="#" class="nav__logo" data-translate="nav_logo">TeleBotsRoman</a>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link active-link">
-                            <i class="uil uil-estate nav__icon"></i>Home
+                        <a href="#home" class="nav__link active-link" data-translate="nav_home_link">
+                            <i class="uil uil-estate nav__icon"></i><span data-translate="nav_home">Home</span>
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#about" class="nav__link">
-                            <i class="uil uil-user nav__icon"></i>About
+                        <a href="#about" class="nav__link" data-translate="nav_about_link">
+                            <i class="uil uil-user nav__icon"></i><span data-translate="nav_about">About</span>
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#skills" class="nav__link">
-                            <i class="uil uil-file-alt nav__icon"></i>Skills
+                        <a href="#skills" class="nav__link" data-translate="nav_skills_link">
+                            <i class="uil uil-file-alt nav__icon"></i><span data-translate="nav_skills">Skills</span>
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#portfolio" class="nav__link">
-                            <i class="uil uil-scenery nav__icon"></i>Projects
+                        <a href="#portfolio" class="nav__link" data-translate="nav_portfolio_link">
+                            <i class="uil uil-scenery nav__icon"></i><span data-translate="nav_portfolio">Projects</span>
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#contact" class="nav__link">
-                            <i class="uil uil-message nav__icon"></i>Contact-Me
+                        <a href="#contact" class="nav__link" data-translate="nav_contact_link">
+                            <i class="uil uil-message nav__icon"></i><span data-translate="nav_contact">Contact-Me</span>
                         </a>
                     </li>
                 </ul>
-                <i class="uil uil-times nav__close" id="nav-close"></i>
+                <i class="uil uil-times nav__close" id="nav-close" data-translate="nav_close"></i>
             </div>
             <div class="nav__btns">
                 <!-- Theme change button -->
-                <i class="uil uil-moon change-theme" id="theme-button"></i>
+                <i class="uil uil-moon change-theme" id="theme-button" data-translate="nav_theme_button"></i>
 
-                <div class="nav__toggle" id="nav-toggle">
+                <!-- Language switch button -->
+                <i class="uil uil-globe change-language" id="language-button" data-translate="nav_language_button"></i>
+
+                <div class="nav__toggle" id="nav-toggle" data-translate="nav_toggle">
                     <i class="uil uil-apps"></i>
                 </div>
             </div>
         </nav>
     </header>
-    <!-- main-->
+
 
     <main class="main">
         <!--========================= Home =====================-->
@@ -70,74 +72,70 @@
                     <img src="assets/img/home.jpg" alt="Image Description" class="home__image" />
                 </div>
                 <div class="home__data">
-                    <h1 class="home__title">Hi, TeleBotsRoman welcome you.</h1>
-                    <h3 class="home__subtitle">
+                    <h1 class="home__title" data-translate="home_title">Hi, TeleBotsRoman welcome you.</h1>
+                    <h3 class="home__subtitle" data-translate="home_subtitle">
                         Telegram bots, scripts, websites, and more from a professional team of developers.
                     </h3>
-                    <p class="home__description">
+                    <p class="home__description" data-translate="home_description">
                         Delivering top-notch Telegram bots, custom scripts, and fully responsive websites. At TeleBotsRoman, we pride ourselves on our professional development team, dedicated to bringing your digital projects to life with precision and creativity.
                     </p>
-                    <a href="#contact" class="button button--flex">
-                      Contact me<i class="uil uil-message button__icon"></i>
-                  </a>
+                    <a href="#contact" class="button button--flex" data-translate="contact_button">
+                        Contact me<i class="uil uil-message button__icon"></i>
+                    </a>
                 </div>
             </div>
         </section>
 
-
         <!--======================= About ========================-->
-
         <section class="about section" id="about">
-            <h2 class="section__title">About Us</h2>
-            <span class="section__subtitle">Professional Development Team</span>
+            <h2 class="section__title" data-translate="about_title">About Us</h2>
+            <span class="section__subtitle" data-translate="about_subtitle">Professional Development Team</span>
 
             <div class="about__container container grid">
-                <img src="assets\img\background.png" alt="TeleBotsRoman Team" class="about__img" />
+                <img src="assets/img/background.png" alt="TeleBotsRoman Team" class="about__img" />
 
                 <div class="about__data">
-                    <p class="about__description">
+                    <p class="about__description" data-translate="about_description">
                         At TeleBotsRoman, we specialize in creating Telegram bots, custom scripts, and fully responsive websites. Our professional team of developers is dedicated to delivering top-notch solutions tailored to your needs. Whether you need a bot for automation,
                         a script to streamline processes, or a website that stands out, we've got you covered.
                     </p>
 
                     <div class="about__info">
                         <div>
-                            <span class="about__info-title">20+</span>
-                            <span class="about__info-name">Projects <br />Delivered</span>
+                            <span class="about__info-title" data-translate="projects_count">20+</span>
+                            <span class="about__info-name" data-translate="projects_label">Projects <br />Delivered</span>
                         </div>
 
                         <div>
-                            <span class="about__info-title">12+</span>
-                            <span class="about__info-name">Satisfied <br />Clients</span>
+                            <span class="about__info-title" data-translate="clients_count">12+</span>
+                            <span class="about__info-name" data-translate="clients_label">Satisfied <br />Clients</span>
                         </div>
 
                         <div>
-                            <span class="about__info-title">2+</span>
-                            <span class="about__info-name">Years of <br />Experience</span>
+                            <span class="about__info-title" data-translate="experience_count">2+</span>
+                            <span class="about__info-name" data-translate="experience_label">Years of <br />Experience</span>
                         </div>
                     </div>
 
                     <div class="about__buttons">
-                        <a href="https://www.instagram.com/roma_fedoniukk" class="button button--flex" target="_blank">
-                  Instagram<i class="uil uil-instagram button__icon smaller-icon"></i>
-              </a>
-                        <a href="https://t.me/nowayrm" class="button button--flex" target="_blank">
-                  Telegram<i class="uil uil-telegram-alt button__icon smaller-icon"></i>
-                  <a href="https://x.com/RFedoniukkk" class="button button--flex" target="_blank">
-                    Twitter<i class="uil uil-x button__icon smaller-icon"></i>
-                </a>
-
+                        <a href="https://www.instagram.com/roma_fedoniukk" class="button button--flex" target="_blank" data-translate="instagram_button">
+                            Instagram<i class="uil uil-instagram button__icon smaller-icon"></i>
+                        </a>
+                        <a href="https://t.me/nowayrm" class="button button--flex" target="_blank" data-translate="telegram_button">
+                            Telegram<i class="uil uil-telegram-alt button__icon smaller-icon"></i>
+                        </a>
+                        <a href="https://x.com/RFedoniukkk" class="button button--flex" target="_blank" data-translate="twitter_button">
+                            Twitter<i class="uil uil-x button__icon smaller-icon"></i>
+                        </a>
                     </div>
                 </div>
             </div>
-
         </section>
-
         <!--===================== SKILLS =====================-->
 
         <section class="skills section" id="skills">
-            <h2 class="section__title">Skills</h2>
-            <span class="section__subtitle">My technical level</span>
+            <h2 class="section__title" data-translate="skills_title">Skills</h2>
+            <span class="section__subtitle" data-translate="skills_subtitle">My technical level</span>
 
             <div class="skills__container container grid">
                 <div>
@@ -147,46 +145,39 @@
                             <i class="fas fa-pencil-ruler skills__icon"></i>
 
                             <div>
-                                <h1 class="skills__title">Programming Languages</h1>
+                                <h1 class="skills__title" data-translate="programming_languages_title">Programming Languages</h1>
                             </div>
 
                             <i class="uil uil-angle-down skills__arrow"></i>
                         </div>
 
-
                         <div class="skills__list grid">
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">Go</h3>
+                                    <h3 class="skills__name" data-translate="skill_go">Go</h3>
                                 </div>
-
                             </div>
 
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">Java</h3>
+                                    <h3 class="skills__name" data-translate="skill_java">Java</h3>
                                 </div>
-
                             </div>
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">JavaScript</h3>
+                                    <h3 class="skills__name" data-translate="skill_javascript">JavaScript</h3>
                                 </div>
-
                             </div>
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">Python</h3>
+                                    <h3 class="skills__name" data-translate="skill_python">Python</h3>
                                 </div>
-
                             </div>
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">TypeScript</h3>
+                                    <h3 class="skills__name" data-translate="skill_typescript">TypeScript</h3>
                                 </div>
                             </div>
-
-
                         </div>
                     </div>
 
@@ -196,7 +187,7 @@
                             <i class="fas fa-code skills__icon"></i>
 
                             <div>
-                                <h1 class="skills__title">IT Constructs</h1>
+                                <h1 class="skills__title" data-translate="it_constructs_title">IT Constructs</h1>
                             </div>
 
                             <i class="uil uil-angle-down skills__arrow"></i>
@@ -205,23 +196,19 @@
                         <div class="skills__list grid">
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">DBMS</h3>
+                                    <h3 class="skills__name" data-translate="skill_dbms">DBMS</h3>
                                 </div>
-
                             </div>
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">DS & Algorithms</h3>
+                                    <h3 class="skills__name" data-translate="skill_ds_algorithms">DS & Algorithms</h3>
                                 </div>
-
                             </div>
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">OOP</h3>
+                                    <h3 class="skills__name" data-translate="skill_oop">OOP</h3>
                                 </div>
-
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -232,7 +219,7 @@
                         <div class="skills__header">
                             <i class="fas fa-swatchbook skills__icon"></i>
                             <div>
-                                <h1 class="skills__title">Technologies</h1>
+                                <h1 class="skills__title" data-translate="technologies_title">Technologies</h1>
                             </div>
 
                             <i class="uil uil-angle-down skills__arrow"></i>
@@ -241,49 +228,40 @@
                         <div class="skills__list grid">
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">GitHub</h3>
+                                    <h3 class="skills__name" data-translate="skill_github">GitHub</h3>
                                 </div>
-
                             </div>
 
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">MySQL</h3>
+                                    <h3 class="skills__name" data-translate="skill_mysql">MySQL</h3>
                                 </div>
-
                             </div>
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">FastAPI</h3>
+                                    <h3 class="skills__name" data-translate="skill_fastapi">FastAPI</h3>
                                 </div>
-
                             </div>
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">NodeJs</h3>
+                                    <h3 class="skills__name" data-translate="skill_nodejs">NodeJs</h3>
                                 </div>
-
                             </div>
 
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">Docker</h3>
+                                    <h3 class="skills__name" data-translate="skill_docker">Docker</h3>
                                 </div>
-
                             </div>
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">SQLAlchemy
-                                    </h3>
+                                    <h3 class="skills__name" data-translate="skill_sqlalchemy">SQLAlchemy</h3>
                                 </div>
-
                             </div>
                             <div class="skills__data">
                                 <div class="skills__titles">
-                                    <h3 class="skills__name">Web Scrapping
-                                    </h3>
+                                    <h3 class="skills__name" data-translate="skill_web_scraping">Web Scraping</h3>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -294,8 +272,8 @@
 
         <!--=================== Portfolio ===================-->
         <section class="portfolio section" id="portfolio">
-            <h2 class="section__title">Projects</h2>
-            <span class="section__subtitle">Most recent work</span>
+            <h2 class="section__title" data-translate="section_title_projects">Projects</h2>
+            <span class="section__subtitle" data-translate="subtitle_resent_work">Most recent works</span>
 
             <div class="portfolio__container container swiper-container">
                 <div class="swiper-wrapper">
@@ -304,20 +282,18 @@
                         <img src="assets/img/portfolio1.png" class="portfolio__img" />
 
                         <div class="portfolio__data">
-                            <h3 class="portfolio__title">
-                                Sushi Telegram Bot
-                            </h3>
-                            <p class="portfolio__description">
+                            <h3 class="portfolio__title" data-translate="project_title_sushi_bot">Sushi Telegram Bot</h3>
+                            <p class="portfolio__description" data-translate="project_description_sushi_bot">
                                 Welcome to Sushi Telegram Bot, your ultimate destination for ordering delicious sushi dishes right from your Telegram app!
                             </p>
-                            <a href="https://github.com/romchhh/Sushi-Order-Telegram-Bot" class="button button--flex button--small portfolio__button">
-                  GitHub Repository
-                  <i class="uil uil-external-link-alt button__icon"></i>
-                </a>
-                            <a href="https://t.me/SamuraiSushii_bot" class="button button--flex button--small portfolio__button">
-                  See Live
-                  <i class="uil uil-external-link-alt button__icon"></i>
-                </a>
+                            <a href="https://github.com/romchhh/Sushi-Order-Telegram-Bot" class="button button--flex button--small portfolio__button" data-translate="button_github_repository">
+                        GitHub Repository
+                        <i class="uil uil-external-link-alt button__icon"></i>
+                    </a>
+                            <a href="https://t.me/SamuraiSushii_bot" class="button button--flex button--small portfolio__button" data-translate="button_see_live">
+                        See Live
+                        <i class="uil uil-external-link-alt button__icon"></i>
+                    </a>
                         </div>
                     </div>
                     <!-- ------------------------portfollio 2-------------------- -->
@@ -326,17 +302,15 @@
                         <img src="assets/img/portfolio2.png" class="portfolio__img" />
 
                         <div class="portfolio__data">
-                            <h3 class="portfolio__title">
-                                Email-Spammer
-                            </h3>
-                            <p class="portfolio__description">
+                            <h3 class="portfolio__title" data-translate="project_title_email_spammer">Email-Spammer</h3>
+                            <p class="portfolio__description" data-translate="project_description_email_spammer">
                                 Email-Spammer is a Python script that facilitates the mass sending of emails to multiple recipients from an Excel file. The script utilizes the PyQt library to create a user-friendly interface where users can input their email login credentials, compose
                                 the message, paste the Excel email database, and send emails.
                             </p>
-                            <a href="https://github.com/romchhh/Email-sender" class="button button--flex button--small portfolio__button">
-                  GitHub Repository
-                  <i class="uil uil-external-link-alt button__icon"></i>
-                </a>
+                            <a href="https://github.com/romchhh/Email-sender" class="button button--flex button--small portfolio__button" data-translate="button_github_repository">
+                        GitHub Repository
+                        <i class="uil uil-external-link-alt button__icon"></i>
+                    </a>
                         </div>
                     </div>
 
@@ -345,19 +319,19 @@
                         <img src="assets/img/portfolio3.png" class="portfolio__img" />
 
                         <div class="portfolio__data">
-                            <h3 class="portfolio__title">Traffic arbitrage Telegram Bot</h3>
-                            <p class="portfolio__description">
+                            <h3 class="portfolio__title" data-translate="project_title_traffic_arbitrage">Traffic arbitrage Telegram Bot</h3>
+                            <p class="portfolio__description" data-translate="project_description_traffic_arbitrage">
                                 The Traffic Arbitrage Telegram Bot is a platform designed to facilitate the buying and selling of traffic between traffic masters and Telegram channel admins. This bot acts as an intermediary, providing offers (orders) and ensuring a comfortable workflow
                                 for both parties. Users can earn payments for attracting subscribers to various Telegram channels.
                             </p>
-                            <a href="https://github.com/romchhh/The-Telegram-bot-for-traffic-arbitrage" class="button button--flex button--small portfolio__button">
-                  GitHub Repository
-                  <i class="uil uil-external-link-alt button__icon"></i>
-                </a>
-                            <a href="https://t.me/Space_Trafficc_Bot" class="button button--flex button--small portfolio__button">
-                  See Live
-                  <i class="uil uil-external-link-alt button__icon"></i>
-                </a>
+                            <a href="https://github.com/romchhh/The-Telegram-bot-for-traffic-arbitrage" class="button button--flex button--small portfolio__button" data-translate="button_github_repository">
+                        GitHub Repository
+                        <i class="uil uil-external-link-alt button__icon"></i>
+                    </a>
+                            <a href="https://t.me/Space_Trafficc_Bot" class="button button--flex button--small portfolio__button" data-translate="button_see_live">
+                        See Live
+                        <i class="uil uil-external-link-alt button__icon"></i>
+                    </a>
                         </div>
                     </div>
                     <!-- ------------------------portfollio 4-------------------- -->
@@ -365,18 +339,18 @@
                         <img src="assets/img/portfolio4.png" class="portfolio__img" />
 
                         <div class="portfolio__data">
-                            <h3 class="portfolio__title">Stock Exchange Monitor Telegram Bot</h3>
-                            <p class="portfolio__description">
+                            <h3 class="portfolio__title" data-translate="project_title_stock_exchange_monitor">Stock Exchange Monitor Telegram Bot</h3>
+                            <p class="portfolio__description" data-translate="project_description_stock_exchange_monitor">
                                 The bot collects and monitors data on upcoming and coming soon projects from various stock exchanges, providing timely updates and detailed information for investors and analysts.
                             </p>
-                            <a href="https://github.com/romchhh/Financial-Exchanges-Monitor" class="button button--flex button--small portfolio__button">
-                  GitHub Repository
-                  <i class="uil uil-external-link-alt button__icon"></i>
-                </a>
-                            <a href="https://t.me/stockexchangemonitorbot" class="button button--flex button--small portfolio__button">
-                  See Live
-                  <i class="uil uil-external-link-alt button__icon"></i>
-                </a>
+                            <a href="https://github.com/romchhh/Financial-Exchanges-Monitor" class="button button--flex button--small portfolio__button" data-translate="button_github_repository">
+                        GitHub Repository
+                        <i class="uil uil-external-link-alt button__icon"></i>
+                    </a>
+                            <a href="https://t.me/stockexchangemonitorbot" class="button button--flex button--small portfolio__button" data-translate="button_see_live">
+                        See Live
+                        <i class="uil uil-external-link-alt button__icon"></i>
+                    </a>
                         </div>
                     </div>
 
@@ -385,19 +359,17 @@
                         <img src="assets/img/portfolio5.png" class="portfolio__img" />
 
                         <div class="portfolio__data">
-                            <h3 class="portfolio__title">Residential Complex Telegram Bot</h3>
-                            <p class="portfolio__description">
+                            <h3 class="portfolio__title" data-translate="project_title_residential_complex">Residential Complex Telegram Bot</h3>
+                            <p class="portfolio__description" data-translate="project_description_residential_complex">
                                 Welcome to TeleBot-Residential-Complex! This Telegram bot allows residents to submit various requests related to access control and security within the residential complex.
                             </p>
-                            <a href="https://github.com/romchhh/TeleBot-Residential-Complex" class="button button--flex button--small portfolio__button">
-                  GitHub Repository
-                  <i class="uil uil-external-link-alt button__icon"></i>
-                </a>
-
+                            <a href="https://github.com/romchhh/TeleBot-Residential-Complex" class="button button--flex button--small portfolio__button" data-translate="button_github_repository">
+                        GitHub Repository
+                        <i class="uil uil-external-link-alt button__icon"></i>
+                    </a>
                         </div>
                     </div>
                 </div>
-
 
                 <!-- add arrows -->
                 <div class="swiper-button-next">
@@ -411,10 +383,11 @@
             </div>
         </section>
 
+
         <!--===================== Contact Me =====================-->
         <section class="contact section" id="contact">
-            <h2 class="section__title">Contact Me</h2>
-            <span class="section__subtitle">Get in touch</span>
+            <h2 class="section__title" data-translate="contact_me_title">Contact Me</h2>
+            <span class="section__subtitle" data-translate="contact_me_subtitle">Get in touch</span>
 
             <div class="contact__container container grid">
                 <div>
@@ -422,74 +395,70 @@
                         <i class="uil uil-calling contact__icon"></i>
 
                         <div>
-                            <h3 class="contact__title">Contact Me</h3>
-                            <span class="contact__subtitle"><a href="tel:6362243314"></a>+380960908006</span
-                >
-              </div>
-            </div>
+                            <h3 class="contact__title" data-translate="contact_phone_title">Contact Me</h3>
+                            <span class="contact__subtitle" data-translate="contact_phone_number"><a href="tel:380960908006">+380960908006</a></span>
+                        </div>
+                    </div>
 
-            <div class="contact__information">
-              <i class="uil uil-envelope-minus contact__icon"></i>
+                    <div class="contact__information">
+                        <i class="uil uil-envelope-minus contact__icon"></i>
 
-              <div>
-                <h3 class="contact__title">Email</h3>
-                <span class="contact__subtitle"
-                  >roman.fedoniuk@gmail.com</span
-                >
-              </div>
-            </div>
+                        <div>
+                            <h3 class="contact__title" data-translate="contact_email_title">Email</h3>
+                            <span class="contact__subtitle" data-translate="contact_email">roman.fedoniuk@gmail.com</span>
+                        </div>
+                    </div>
 
-            <div class="contact__information">
-              <i class="uil uil-map-marker contact__icon"></i>
+                    <div class="contact__information">
+                        <i class="uil uil-map-marker contact__icon"></i>
 
-              <div>
-                <h3 class="contact__title">Location</h3>
-                <span class="contact__subtitle"
-                  >Kyiv, Ukraine</span
-                >
-              </div>
-            </div>
-          </div>
-
-          <form id="contact-form" class="contact__form grid">
-            <div class="contact__inputs grid">
-                <div class="contact__content">
-                    <label for="name" class="content__label">Name</label>
-                    <input type="text" name="name" id="name" class="contact__input" required />
+                        <div>
+                            <h3 class="contact__title" data-translate="contact_location_title">Location</h3>
+                            <span class="contact__subtitle" data-translate="contact_location">Kyiv, Ukraine</span>
+                        </div>
+                    </div>
                 </div>
-        
-                <div class="contact__content">
-                    <label for="number" class="content__label">Number</label>
-                    <input type="text" name="number" id="number" class="contact__input" required />
-                </div>
-            </div>
-        
-            <div class="contact__content">
-                <label for="message" class="content__label">Message</label>
-                <textarea name="message" id="message" cols="0" rows="7" class="contact__input" required></textarea>
-            </div>
-        
-            <div>
-                <button type="submit" class="button button--flex">
+
+                <form id="contact-form" class="contact__form grid">
+                    <div class="contact__inputs grid">
+                        <div class="contact__content">
+                            <label for="name" class="content__label" data-translate="contact_form_name_label">Name</label>
+                            <input type="text" name="name" id="name" class="contact__input" required />
+                        </div>
+
+                        <div class="contact__content">
+                            <label for="number" class="content__label" data-translate="contact_form_number_label">Number</label>
+                            <input type="text" name="number" id="number" class="contact__input" required />
+                        </div>
+                    </div>
+
+                    <div class="contact__content">
+                        <label for="message" class="content__label" data-translate="contact_form_message_label">Message</label>
+                        <textarea name="message" id="message" cols="0" rows="7" class="contact__input" required></textarea>
+                    </div>
+
+                    <div>
+                        <button type="submit" class="button button--flex" data-translate="contact_form_button">
                     Send Message
                     <i class="uil uil-message button__icon"></i>
                 </button>
+                    </div>
+                </form>
             </div>
-        </form>
-        </div>
-      </section>
+        </section>
+
     </main>
 
     <!--================== Footer ===============-->
-<!--================== Footer ===============-->
-<footer class="footer">
-  <p class="footer__copy">&#169; by nowayrm</p>
-</footer>
-    
+    <!--================== Footer ===============-->
+    <footer class="footer">
+        <p class="footer__copy">&#169; by nowayrm</p>
+    </footer>
+
 
     <!--================== SCROLL TOP ==================-->
     <a href="#" class="scrollup" id="scroll-up">
-      <i class="uil uil-arrow-up scrollup__icon"></i>
+        <i class="uil uil-arrow-up scrollup__icon"></i>
     </a>
 
     <script type="text/javascript" src="assets/swiper-bundle.min.js"></script>
@@ -497,5 +466,6 @@
     <script src="assets/ptj.js"></script>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
-  </body>
+</body>
+
 </html>
