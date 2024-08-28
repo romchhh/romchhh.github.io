@@ -60,7 +60,7 @@ document.getElementById('language-button').addEventListener('click', function() 
 
 function translateToUkrainian() {
     const translations = {
-        nav_logo: 'TeleBotsRoman',
+        nav_logo: 'TeleBotsNowayrm',
         nav_home_link: 'Головна',
         nav_home: 'Головна',
         nav_about_link: 'Про нас',
@@ -71,7 +71,7 @@ function translateToUkrainian() {
         nav_portfolio: 'Проекти',
         nav_contact_link: 'Контакти',
         nav_contact: 'Контакти',
-        home_title: 'Привіт, TeleBotsRoman вітає вас.',
+        home_title: 'Привіт, TeleBotsNowayrm вітає вас.',
         home_subtitle: 'Телеграм-боти, скрипти, веб-сайти та інше від професійної команди розробників.',
         home_description: 'Ми пропонуємо найкращі Telegram боти, кастомні скрипти та повністю адаптивні веб-сайти. В TeleBotsRoman ми пишаємося нашою професійною командою розробників, яка прагне втілити ваші цифрові проекти в життя з точністю та творчістю.',
         contact_button: 'Зв\'яжіться зі мною',
@@ -140,7 +140,7 @@ function translateToUkrainian() {
 
 function translateToEnglish() {
     const translations = {
-        nav_logo: 'TeleBotsRoman',
+        nav_logo: 'TeleBotsNowayrm',
         nav_home_link: 'Home',
         nav_home: 'Home',
         nav_about_link: 'About',
@@ -151,7 +151,7 @@ function translateToEnglish() {
         nav_portfolio: 'Projects',
         nav_contact_link: 'Contact-Me',
         nav_contact: 'Contact-Me',
-        home_title: 'Hi, TeleBotsRoman welcome you.',
+        home_title: 'Hi, TeleBotsNowayrm welcome you.',
         home_subtitle: 'Telegram bots, scripts, websites, and more from a professional team of developers.',
         home_description: 'Delivering top-notch Telegram bots, custom scripts, and fully responsive websites. At TeleBotsRoman, we pride ourselves on our professional development team, dedicated to bringing your digital projects to life with precision and creativity.',
         contact_button: 'Contact me',
