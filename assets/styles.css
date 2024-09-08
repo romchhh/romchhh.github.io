@@ -320,7 +320,7 @@ img {
     /* Adjust the width of the image */
     height: 290px;
     /* Adjust the height of the image */
-    border-radius: 15px;
+    border-radius: 50px;
     /* Adjust the roundness of the corners */
     object-fit: cover;
     /* Ensure the image covers the area without distortion */
