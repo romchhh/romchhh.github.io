@@ -470,8 +470,8 @@ img {
 /*===================== About ==================*/
 
 .about__img {
-    width: 350px;
-    height: 420px;
+    height: 320px;
+    width: 100px;
     border-radius: 15px;
     /* Adjust this value to control the roundness of the corners */
     justify-self: center;
