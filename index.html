@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name='freelancehunt' content='24f4423fe6c4066'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TeleBotsRoman</title>
@@ -394,16 +393,16 @@
                 <div>
                     <div class="contact__information">
                         <i class="uil uil-calling contact__icon"></i>
-
                         <div>
                             <h3 class="contact__title" data-translate="contact_phone_title">Contact Me</h3>
-                            <span class="contact__subtitle" data-translate="contact_phone_number"><a href="tel:380960908006">+380960908006</a></span>
+                            <span class="contact__subtitle" data-translate="contact_phone_number">
+                        <a href="tel:380960908006">+380960908006</a>
+                    </span>
                         </div>
                     </div>
 
                     <div class="contact__information">
                         <i class="uil uil-envelope-minus contact__icon"></i>
-
                         <div>
                             <h3 class="contact__title" data-translate="contact_email_title">Email</h3>
                             <span class="contact__subtitle" data-translate="contact_email">roman.fedoniuk@gmail.com</span>
@@ -412,7 +411,6 @@
 
                     <div class="contact__information">
                         <i class="uil uil-map-marker contact__icon"></i>
-
                         <div>
                             <h3 class="contact__title" data-translate="contact_location_title">Location</h3>
                             <span class="contact__subtitle" data-translate="contact_location">Kyiv, Ukraine</span>
@@ -430,6 +428,9 @@
                         <div class="contact__content">
                             <label for="number" class="content__label" data-translate="contact_form_number_label">Number</label>
                             <input type="text" name="number" id="number" class="contact__input" required />
+                            <span id="error-message" class="error-message" style="color:red; display:none;">
+                        <i class="uil uil-exclamation-circle"></i> Invalid number format
+                    </span>
                         </div>
                     </div>
 
@@ -439,11 +440,13 @@
                     </div>
 
                     <div>
-                        <button type="submit" class="button button--flex" data-translate="contact_form_button">
+                        <button id="submit-btn" type="submit" class="button button--flex" data-translate="contact_form_button" disabled>
                     Send Message
                     <i class="uil uil-message button__icon"></i>
                 </button>
                     </div>
+
+                    <div id="message-container" class="message-container"></div>
                 </form>
             </div>
         </section>
