@@ -22,11 +22,19 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     emailjs.sendForm('service_5kbo72j', 'template_9okhmr2', this)
         .then(function(response) {
             // Notify user of successful submission
-            alert('Message sent successfully!');
+            const messageContainer = document.getElementById('message-container');
+            messageContainer.className = 'message-container success';
+            messageContainer.innerHTML = '<i class="uil uil-check-circle"></i> Message sent successfully!';
+            messageContainer.style.display = 'block';
             console.log('Success response:', response);
 
             // Clear the form fields
             document.getElementById('contact-form').reset();
+
+            // Hide the message after a few seconds
+            setTimeout(function() {
+                messageContainer.style.display = 'none';
+            }, 5000);
         }, function(error) {
             // Log the full error details to the console for debugging
             console.error('Failed to send message:', error);
@@ -40,10 +48,13 @@ document.getElementById('contact-form').addEventListener('submit', function(even
             }
 
             // Include the User ID in the error message
-            errorMessage += '\nPublic Key (User ID): ' + 'LKXFC2hGVLQUFUeTs'; // Use actual User ID
+            errorMessage += '<br>Public Key (User ID): ' + 'LKXFC2hGVLQUFUeTs'; // Use actual User ID
 
-            // Display the error message in an alert
-            alert(errorMessage);
+            // Display the error message in a styled container
+            const messageContainer = document.getElementById('message-container');
+            messageContainer.className = 'message-container error';
+            messageContainer.innerHTML = '<i class="uil uil-exclamation-circle"></i> ' + errorMessage;
+            messageContainer.style.display = 'block';
         });
 });
 
@@ -225,8 +236,24 @@ function applyTranslations(translations) {
 
 
 
+const phoneInput = document.getElementById('number');
+const errorMessage = document.getElementById('error-message');
+const submitButton = document.getElementById('submit-btn');
+const phonePattern = /^\+?0\d{9}$/;
 
+// Функція для перевірки валідності номера
+function validatePhoneNumber() {
+    if (phonePattern.test(phoneInput.value)) {
+        errorMessage.style.display = 'none'; // Сховати повідомлення про помилку
+        submitButton.disabled = false; // Активувати кнопку
+    } else {
+        errorMessage.style.display = 'block'; // Показати повідомлення про помилку
+        submitButton.disabled = true; // Заблокувати кнопку
+    }
+}
 
+// Запуск перевірки при зміні значення поля
+phoneInput.addEventListener('input', validatePhoneNumber);
 
 
 
