@@ -320,7 +320,7 @@ img {
     /* Adjust the width of the image */
     height: 290px;
     /* Adjust the height of the image */
-    border-radius: 50px;
+    border-radius: 45px;
     /* Adjust the roundness of the corners */
     object-fit: cover;
     /* Ensure the image covers the area without distortion */
@@ -471,7 +471,7 @@ img {
 
 .about__img {
     height: 320px;
-    width: 300px;
+    width: 100px;
     border-radius: 15px;
     /* Adjust this value to control the roundness of the corners */
     justify-self: center;
@@ -797,6 +797,14 @@ img {
     row-gap: 2rem;
 }
 
+.error-message {
+    font-size: 0.9rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 5px;
+}
+
 .contact__information {
     display: flex;
     margin-bottom: var(--mb-2);
@@ -820,6 +828,7 @@ img {
 
 .contact__content {
     background-color: var(--input-color);
+    position: relative;
     border-radius: 0.5rem;
     padding: 0.75rem 1rem 0.25rem;
 }
@@ -838,6 +847,30 @@ img {
     border: none;
     outline: none;
     padding: 0.25rem 0.5rem 0.5rem 0;
+}
+
+.message-container {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    display: none;
+    /* Hidden by default */
+}
+
+.message-container.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.message-container.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.message-container i {
+    margin-right: 10px;
 }
 
 
