@@ -471,7 +471,7 @@ img {
 
 .about__img {
     height: 320px;
-    width: 100px;
+    width: 300px;
     border-radius: 15px;
     /* Adjust this value to control the roundness of the corners */
     justify-self: center;
